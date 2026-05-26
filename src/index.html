@@ -1,14 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prototipo</title>
+    <title>Lista de productos</title>
 
     <link rel="stylesheet" href="./css/global.css">
 </head>
 <body>
-    <h1>Diego</h1>
+    <main class="contenedor">
+        <header class="encabezado">
+            <h1>Lista de productos</h1>
+            <p>
+                Tabla HTML
+            </p>
+        </header>
+
+        <section class="seccion-tabla">
+            <h2>Productos disponibles</h2>
+
+            <div class="tabla-contenedor">
+                <table class="tabla-productos">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Stock</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="productosTabla">
+                        <!-- Los productos se agregan desde main.js -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
 
     <script src="./main.js"></script>
 </body>

@@ -1,0 +1,99 @@
+:root {
+    --color-fondo: #f4f6f8;
+    --color-principal: #1f2937;
+    --color-secundario: #2563eb;
+    --color-texto: #222222;
+    --color-texto-suave: #555555;
+    --color-blanco: #ffffff;
+    --color-borde: #dddddd;
+    --color-hover: #eef4ff;
+
+    --espacio-pequeno: 0.5rem;
+    --espacio-mediano: 1rem;
+    --espacio-grande: 1.5rem;
+    --espacio-extra: 2.5rem;
+
+    --radio-borde: 0.75rem;
+    --sombra-caja: 0 0.25rem 0.75rem rgb(0 0 0 / 12%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: var(--espacio-extra) auto;
+}
+
+.encabezado {
+    margin-bottom: var(--espacio-grande);
+    padding: var(--espacio-grande);
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    border-radius: var(--radio-borde);
+    text-align: center;
+}
+
+.encabezado h1 {
+    margin: 0 0 var(--espacio-pequeno);
+    font-size: 2rem;
+}
+
+.encabezado p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.seccion-tabla {
+    padding: var(--espacio-grande);
+    background-color: var(--color-blanco);
+    border: 1px solid var(--color-borde);
+    border-radius: var(--radio-borde);
+    box-shadow: var(--sombra-caja);
+}
+
+.seccion-tabla h2 {
+    margin-top: 0;
+    margin-bottom: var(--espacio-mediano);
+    color: var(--color-principal);
+}
+
+.tabla-contenedor {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.tabla-productos {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+    padding: var(--espacio-mediano);
+    border-bottom: 1px solid var(--color-borde);
+    text-align: left;
+}
+
+.tabla-productos th {
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+}
+
+.tabla-productos tbody tr:hover {
+    background-color: var(--color-hover);
+}
+
+.tabla-productos td:first-child {
+    font-weight: bold;
+    color: var(--color-secundario);
+}
